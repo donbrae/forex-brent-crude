@@ -8,10 +8,21 @@
                 base: 'GBP',
                 symbols: 'USD,EUR'
             },
+            month_friendly = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
             brent_crude = {},
             forex = {},
             date = getDate(),
             date_previous;
+
+        /**
+         * Converts, e.g., 2017-04-29 to 29 Apr
+         * @param {String} date - in format YYYY-MM-DD
+         * @returns {String}
+         */
+        function friendlyDate(date) {
+            var d = date.split('-');
+            return d[2] + ' ' + month_friendly[d[1] - 1];
+        }
 
         /**
          * Gets date in YYYY-MM-DD format
@@ -92,14 +103,12 @@
                                 forex.one_day_pc_change[k] = (((forex.latest.rates[k] - forex.previous.rates[k]) / forex.previous.rates[k]) * 100).toFixed(2);
                             });
 
-                            $('.ds-forex-date').text(forex.latest.date + ' (change from ' + forex.previous.date + ')');
+                            $('.ds-forex-date').text(friendlyDate(forex.latest.date) + ' (change from ' + friendlyDate(forex.previous.date) + ')');
                             $('.ds-euro-val').text(forex.latest.rates.EUR);
                             $('.ds-usd-val').text(forex.latest.rates.USD);
                             formatPCChange(forex.one_day_pc_change.EUR, '.ds-euro-chg');
                             formatPCChange(forex.one_day_pc_change.USD, '.ds-usd-chg');
                             $('.ds-forex').addClass('ds-in');
-
-                            console.log(forex);
                         },
                         error: function(type, xhr) {
                             console.log(type + ': ' + xhr.responseText);
@@ -140,7 +149,7 @@
                     // 1 day % change
                     brent_crude.one_day_pc_change = (((brent_crude.latest.price_settle - brent_crude.previous.price_settle) / brent_crude.previous.price_settle) * 100).toFixed(2);
 
-                    $('.ds-brent-date').text(brent_crude.latest.date + ' (change from ' + brent_crude.previous.date + ')');
+                    $('.ds-brent-date').text(friendlyDate(brent_crude.latest.date) + ' (change from ' + friendlyDate(brent_crude.previous.date) + ')');
                     $('.ds-brent-val').text(brent_crude.latest.price_settle);
                     formatPCChange(brent_crude.one_day_pc_change, '.ds-brent-chg');
                     $('.ds-brent').addClass('ds-in');
