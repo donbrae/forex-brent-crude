@@ -249,14 +249,14 @@ i {
 blockquote {
 	border-left: 4px solid #707070;
 	border-left: 4px solid rgba(51, 51, 51, 0.7);
+	background-color: #f9f9f9;
+    padding: 10px 15px;
 	color: #707070;
-	color: rgba(51, 51, 51, 0.7);
-	font-size: 18px;
-	font-size: 1.8rem;
+	color: rgba(51, 51, 51, 0.78);
+	font-size: 100%;
 	font-style: italic;
 	line-height: 1.6667;
 	margin-bottom: 1.6667em;
-	padding-left: 0.7778em;
 }
 
 blockquote p {
@@ -270,8 +270,8 @@ blockquote > p:last-child {
 blockquote cite,
 blockquote small {
 	color: #333;
-	font-size: 15px;
-	font-size: 1.5rem;
+	font-size: 14px;
+	font-size: 1.35rem;
 	font-family: "Noto Sans", sans-serif;
 	line-height: 1.6;
 }
@@ -1354,15 +1354,15 @@ img.aligncenter {
 }
 
 .site-description {
-	display: none;
+	display: inline-block;
 	color: #333;
 	font-family: "Noto Sans", sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
-	font-weight: 400;
+	font-weight: 600;
 	line-height: 1.5;
 	margin: 0.5em 0 0;
-	opacity: 0.85;
+    text-transform: uppercase;
 }
 
 
@@ -1468,6 +1468,7 @@ img.aligncenter {
 .widget_categories a,
 .widget_links a,
 .widget_meta a,
+.widget_text a,
 .widget_nav_menu a,
 .widget_pages a,
 .widget_recent_comments a,
@@ -1479,6 +1480,7 @@ img.aligncenter {
 .widget_categories ul,
 .widget_links ul,
 .widget_meta ul,
+.widget_text ul,
 .widget_nav_menu ul,
 .widget_pages ul,
 .widget_recent_comments ul,
@@ -1491,6 +1493,7 @@ img.aligncenter {
 .widget_categories li,
 .widget_links li,
 .widget_meta li,
+.widget_text li,
 .widget_nav_menu li,
 .widget_pages li,
 .widget_recent_comments li,
@@ -1504,6 +1507,7 @@ img.aligncenter {
 .widget_categories li:first-child,
 .widget_links li:first-child,
 .widget_meta li:first-child,
+.widget_text li:first-child,
 .widget_nav_menu li:first-child,
 .widget_pages li:first-child,
 .widget_recent_comments li:first-child,
@@ -1516,6 +1520,7 @@ img.aligncenter {
 .widget_categories li:last-child,
 .widget_links li:last-child,
 .widget_meta li:last-child,
+.widget_text li:last-child,
 .widget_nav_menu li:last-child,
 .widget_pages li:last-child,
 .widget_recent_comments li:last-child,
@@ -1576,6 +1581,9 @@ img.aligncenter {
 
 .textwidget a {
 	border-bottom: 1px solid #333;
+}
+.textwidget ul li a {
+	border-bottom: none;
 }
 
 .textwidget a:hover,
@@ -2031,6 +2039,7 @@ a.post-thumbnail:focus {
 	background-color: #fff;
 	border-bottom: 1px solid rgba(51, 51, 51, 0.1);
 	padding: 7.6923%;
+	margin-top: 8.3333%;
 }
 
 .page-title {
@@ -2767,13 +2776,9 @@ p > video {
 		line-height: 1.0909;
 	}
 
-	.site-description {
-		display: block;
-	}
+	.site-description {}
 
 	.secondary {
-		box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
-		margin: 7.6923% 7.6923% 0;
 		padding: 7.6923% 7.6923% 0;
 	}
 
@@ -2822,6 +2827,10 @@ p > video {
 		margin: 0 7.6923%;
 	}
 
+	.page-header {
+		margin-top: 8.3333%;
+	}
+
 	.hentry + .hentry,
 	.page-header + .hentry,
 	.page-header + .page-content {}
@@ -2840,7 +2849,7 @@ p > video {
 
 	.entry-content,
 	.entry-summary {
-		padding: 0 0 9.0909%;
+		padding: 0 0 5.0909%;
 	}
 
 	.entry-footer {
@@ -2950,8 +2959,6 @@ p > video {
 	}
 
 	blockquote {
-		font-size: 20px;
-		font-size: 2rem;
 		line-height: 1.75;
 		margin-bottom: 1.75em;
 		margin-left: -1.05em;
@@ -2964,8 +2971,8 @@ p > video {
 
 	blockquote cite,
 	blockquote small {
-		font-size: 17px;
-		font-size: 1.7rem;
+		font-size: 15px;
+		font-size: 1.5rem;
 		line-height: 1.6471;
 	}
 
@@ -3135,8 +3142,8 @@ p > video {
 	}
 
 	.site-description {
-		font-size: 14px;
-		font-size: 1.4rem;
+		font-size: 16px;
+		font-size: 1.6rem;
 	}
 
 	.widget {
@@ -3263,6 +3270,7 @@ p > video {
 	.widget_categories li,
 	.widget_links li,
 	.widget_meta li,
+	.widget_text li,
 	.widget_nav_menu li,
 	.widget_pages li,
 	.widget_recent_comments li,
@@ -3583,8 +3591,6 @@ p > video {
 	}
 
 	blockquote {
-		font-size: 22px;
-		font-size: 2.2rem;
 		line-height: 1.8182;
 		margin-bottom: 1.8182em;
 		margin-left: -1.0909em;
@@ -3765,8 +3771,8 @@ p > video {
 	}
 
 	.site-description {
-		font-size: 16px;
-		font-size: 1.6rem;
+		font-size: 18px;
+		font-size: 1.8rem;
 	}
 
 	.widget {
@@ -3837,6 +3843,7 @@ p > video {
 	.widget_categories li,
 	.widget_links li,
 	.widget_meta li,
+	.widget_text li,
 	.widget_nav_menu li,
 	.widget_pages li,
 	.widget_recent_comments li,
@@ -4176,8 +4183,6 @@ p > video {
 	}
 
 	blockquote {
-		font-size: 18px;
-		font-size: 1.8rem;
 		line-height: 1.6667;
 		margin-bottom: 1.6667em;
 		margin-left: -1.3333em;
@@ -4407,8 +4412,12 @@ p > video {
 	}
 
 	.site-description {
-		font-size: 12px;
-		font-size: 1.2rem;
+		font-size: 11px;
+		font-size: 1.1rem;
+		background-color: #333;
+		color: #fff;
+		display: inline-block;
+		padding: 4px 7px;
 	}
 
 	.widget {
@@ -4482,6 +4491,7 @@ p > video {
 	.widget_categories li,
 	.widget_links li,
 	.widget_meta li,
+	.widget_text li,
 	.widget_nav_menu li,
 	.widget_pages li,
 	.widget_recent_comments li,
@@ -4509,6 +4519,10 @@ p > video {
 		margin: 0 8.3333%;
 	}
 
+	.page-header {
+		margin-top: 8.3333%;
+	}
+
 	.hentry {
 		padding-top: 8.3333%;
 	}
@@ -4521,6 +4535,10 @@ p > video {
 	.page-header + .hentry,
 	.page-header + .page-content {
 		margin-top: 8.3333%;
+	}
+
+	.page-header + .hentry {
+		margin-top: 0;
 	}
 
 	.post-thumbnail {
@@ -4848,8 +4866,6 @@ p > video {
 	}
 
 	blockquote {
-		font-size: 20px;
-		font-size: 2rem;
 		line-height: 1.75;
 		margin-bottom: 1.75em;
 		margin-left: -1.05em;
@@ -4862,8 +4878,8 @@ p > video {
 
 	blockquote cite,
 	blockquote small {
-		font-size: 17px;
-		font-size: 1.7rem;
+		font-size: 16px;
+		font-size: 1.6rem;
 		line-height: 1.6471;
 	}
 
@@ -5027,6 +5043,7 @@ p > video {
 	.site-description {
 		font-size: 14px;
 		font-size: 1.4rem;
+		padding: 4px 10px;
 	}
 
 	.widget {
@@ -5085,6 +5102,7 @@ p > video {
 	.widget_categories li,
 	.widget_links li,
 	.widget_meta li,
+	.widget_text li,
 	.widget_nav_menu li,
 	.widget_pages li,
 	.widget_recent_comments li,
@@ -5390,8 +5408,6 @@ p > video {
 	}
 
 	blockquote {
-		font-size: 22px;
-		font-size: 2.2rem;
 		line-height: 1.8182;
 		margin-bottom: 1.8182em;
 		margin-left: -1.0909em;
@@ -5404,8 +5420,8 @@ p > video {
 
 	blockquote cite,
 	blockquote small {
-		font-size: 19px;
-		font-size: 1.9rem;
+		font-size: 17px;
+		font-size: 1.7rem;
 		line-height: 1.6842;
 	}
 
@@ -5636,6 +5652,7 @@ p > video {
 	.widget_categories li,
 	.widget_links li,
 	.widget_meta li,
+	.widget_text li,
 	.widget_nav_menu li,
 	.widget_pages li,
 	.widget_recent_comments li,
@@ -6014,7 +6031,7 @@ p > video {
 	}
 
 	.site-description {
-		display: block;
+		display: inline-block;
 	}
 
 	.hentry + .hentry {
