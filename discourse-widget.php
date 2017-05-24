@@ -29,10 +29,10 @@
                 <td>
                     <ul>
                             <li>£29,554 (2016)</li>
-                         	<li>£29,107 (2015)</li>
-                         	<li>£29,838 (2014)</li>
-                         	<li>£29,391 (2013)</li>
-                         	<li>£28,357 (2012)</li>
+                            <li>£29,107 (2015)</li>
+                            <li>£29,838 (2014)</li>
+                            <li>£29,391 (2013)</li>
+                            <li>£28,357 (2012)</li>
                     </ul>
                 </td>
                 <td><a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics">4.4%</a> (<span class="highlight-green">-1.7%</span> year on year)</td>
@@ -68,8 +68,11 @@
                 </td>
                 <td>
                     <ul>
-                        <li><a href="http://www.gov.scot/Resource/0051/00514410.pdf">£29,300</a> (Oct 2015 – Sep 2016)</li>
-                        <li><a href="http://www.gov.scot/Resource/0049/00499946.pdf">£28,400</a> (2015)</li>
+                        <li>£29,554 (2016)</li>
+                        <li>£29,107 (2015)</li>
+                        <li>£29,838 (2014)</li>
+                        <li>£29,391 (2013)</li>
+                        <li>£28,357 (2012)</li>
                     </ul>
                 </td>
                 <td><a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics">4.4%</a> (<span class="highlight-green">-1.7%</span> year on year)</td>
