@@ -35,7 +35,7 @@
                             <li>£28,357 (2012)</li>
                     </ul>
                 </td>
-                <td><a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics">4.4%</a> (<span class="highlight-green">-1.7%</span> year on year)</td>
+                <td><a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics">4%</a> (<span class="highlight-green">-1.8%</span> year on year)</td>
                 <td><span class="ds-forex ds-fade">£1 = €<span class="ds-euro-val"></span> (<span class="ds-euro-chg"></span>)</span></td>
                 <td><span class="ds-forex ds-fade">£1 = $<span class="ds-usd-val"></span> (<span class="ds-usd-chg"></span>)</span></td>
                 <td><span class="ds-brent ds-fade"><a href="http://www.quandl.com/CHRIS/CME_BZ1"><span class="ds-brent-val"></span></a> dollars per barrel (<span class="ds-brent-chg"></span>)</span></td>
@@ -75,7 +75,7 @@
                         <li>£28,357 (2012)</li>
                     </ul>
                 </td>
-                <td><a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics">4.4%</a> (<span class="highlight-green">-1.7%</span> year on year)</td>
+                <td><a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/summaryoflabourmarketstatistics">4%</a> (<span class="highlight-green">-1.8%</span> year on year)</td>
             </tr>
         </tbody>
         <thead>

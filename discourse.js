@@ -62,7 +62,7 @@
             }
         }
 
-        if ($('.discourse-widget').length) {
+        if ($('.ds-widget').length) {
             /**
              * Forex
              * Alternative 1: https://www.quandl.com/api/v3/datasets/ECB/EURGBP?limit=2
