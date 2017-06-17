@@ -73,7 +73,7 @@
             // Most recent
             $.ajax({
                 type: 'GET',
-                url: 'https://api.fixer.io/latest' + date,
+                url: 'https://api.fixer.io/' + date,
                 data: {
                     base: cfg.base,
                     symbols: cfg.symbols
