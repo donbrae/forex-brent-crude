@@ -377,7 +377,7 @@ big {
 	font-size: 125%;
 }
 
-.entry-title a, .entry-header h1 {
+.entry-title a {
 	background-color: #333;
 	color: #fff;
     padding: 10px 17px;
@@ -1614,6 +1614,9 @@ img.aligncenter {
 	background-color: #dcff73;
     padding: 2px 8px;
     display: inline-block;
+}
+.textwidget .widget-featured ul {
+	margin-bottom: 0;
 }
 .textwidget .widget-featured h2 i {
 	padding-right: 2px;
@@ -6243,5 +6246,20 @@ p > video {
 }
 
 .post-1778 table {
-	margin-bottom: 0;
+	margin-bottom: 22px;
+}
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+	margin-bottom: 1.6em;
+}
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
