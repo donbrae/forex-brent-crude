@@ -377,10 +377,21 @@ big {
 	font-size: 125%;
 }
 
+h1.entry-title {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 17px;
+    display: inline-block;
+}
+
+.post_format-post-format-link h1.entry-title {
+	padding: 0;
+}
+
 .entry-title a {
 	background-color: #333;
 	color: #fff;
-    padding: 10px 17px;
+	padding: 10px 17px;
     display: inline-block;
 }
 
